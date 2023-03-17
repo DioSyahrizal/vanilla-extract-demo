@@ -1,4 +1,5 @@
-import { style } from "@vanilla-extract/css";
+import theme from "@/utils/theme.css";
+import { globalStyle, style } from "@vanilla-extract/css";
 
 export const cardStyles = style({
   backgroundColor: "white",
@@ -11,4 +12,8 @@ export const cardStyles = style({
   justifyContent: "space-between",
   alignItems: "flex-start",
   height: "100%",
+});
+
+globalStyle(`${cardStyles} span`, {
+  color: theme.colors.secondary,
 });

@@ -11,6 +11,11 @@ export const badgeRecipes = recipe({
     spaceSprinkles,
     {
       borderRadius: 8,
+      selectors: {
+        "&:hover": {
+          cursor: "pointer",
+        },
+      },
     },
   ],
   variants: {

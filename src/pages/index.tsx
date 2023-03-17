@@ -21,13 +21,13 @@ export default function Home() {
         >
           <h1 style={{ textAlign: "center" }}>Title</h1>
           <Card>
+            <span>This is Card</span>
             <Badge color="primary" variant="outline">
               Primary
             </Badge>
             <Badge color="secondary" variant="solid">
               Primary
             </Badge>
-            <p>This is Card</p>
           </Card>
         </Box>
       </main>

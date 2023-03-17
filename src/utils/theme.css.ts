@@ -1,11 +1,7 @@
-import {
-  createGlobalTheme,
-  createGlobalThemeContract,
-} from "@vanilla-extract/css";
+import { createGlobalTheme, createThemeContract } from "@vanilla-extract/css";
 import { tokens } from "./token/sprinkles.css";
-import { getVarName } from "./format";
 
-export const theme = createGlobalThemeContract(tokens, getVarName);
+export const theme = createThemeContract(tokens);
 createGlobalTheme(":root", theme, tokens);
 
 export default theme;
